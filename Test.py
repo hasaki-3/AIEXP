@@ -49,8 +49,6 @@ def display(img, output, threshold):
         show_bboxes(fig.axes, bbox, '%.2f' % score, 'w')
     plt.show()
 
-net = TinySSD(num_classes=1)
-net = net.to('cpu')
 
 def predict(X):
     net.eval()
@@ -61,6 +59,13 @@ def predict(X):
     return output[0, idx]
 
 
+net = TinySSD(num_classes=1)
+net = net.to('cpu')
+
+# 加载模型参数
+net.load_state_dict(torch.load('net_30.pkl', map_location=torch.device('cpu')))
+
+      
 files = glob.glob('detection/test/*.jpg')
 for name in files:
     X = torchvision.io.read_image(name).unsqueeze(0).float()
@@ -68,4 +73,5 @@ for name in files:
 
     output = predict(X)
     display(img, output.cpu(), threshold=0.6)
+    plt.show()
     break
