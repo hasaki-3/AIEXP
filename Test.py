@@ -63,7 +63,7 @@ net = TinySSD(num_classes=1)
 net = net.to('cpu')
 
 # 加载模型参数
-net.load_state_dict(torch.load('net_30.pkl', map_location=torch.device('cpu')))
+net.load_state_dict(torch.load('net_30_mine.pkl', map_location=torch.device('cpu')))
 
       
 files = glob.glob('detection/test/*.jpg')
