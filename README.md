@@ -10,7 +10,7 @@
 
 使用transform扩充数据集进行效果提升，在Test.py中测试效果提升，置信度从0.83提升至0.95。
 
-三、文件拆分
+三、文件说明
 
 read_data.py：数据读取，进行数据增强，数据加载并转为pytorch可用的数据
 
@@ -31,6 +31,10 @@ Net.py：定义TinySSD网络
 Train.py：定义损失函数和评价函数，训练模型，保存模型参数
 
 Test.py：将边框格式转为matplotlib格式，显示边界框，加载模型参数进行预测
+
+My_result：效果增强后加载'net_30_mine.pkl'训练出的结果
+
+Original_result：效果增强之前加载'net_30_original.pkl'训练出的结果
 
 四、注意事项
 
