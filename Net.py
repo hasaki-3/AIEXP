@@ -1,7 +1,7 @@
 from torch import nn
 import torch
 from BaseBlocks import get_blk, blk_forward
-from Predict import cls_predictor,bbox_predictor, concat_preds
+from Predict import cls_predictor, bbox_predictor, concat_preds
 
 sizes = [[0.2, 0.272], [0.37, 0.447], [0.54, 0.619], [0.71, 0.79],
          [0.88, 0.961]]
