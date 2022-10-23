@@ -38,4 +38,4 @@ Test.py：将边框格式转为matplotlib格式，显示边界框，加载模型
 
 2、detection文件夹需要和python文件在同一个目录下。
 
-3、老师的模型保存在net_30_teacher.pkl，我训练出的模型保存在net_30_student.pkl，可以在Test.py中修改加载的模型。
+3、老师的模型保存在net_30_teacher.pkl，我训练出的模型保存在net_30_mine.pkl，可以在Test.py中修改加载的模型。
