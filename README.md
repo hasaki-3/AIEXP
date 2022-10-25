@@ -8,7 +8,7 @@
 
 二、效果提升
 
-使用transform扩充数据集进行效果提升，在Test.py中测试效果提升，置信度从0.83提升至0.95。
+使用transform扩充数据集进行效果提升，并增加训练轮数至50轮，在Test.py中测试效果提升，置信度从0.83提升至1.00。
 
 三、文件说明
 
@@ -32,9 +32,13 @@ Train.py：定义损失函数和评价函数，训练模型，保存模型参数
 
 Test.py：将边框格式转为matplotlib格式，显示边界框，加载模型参数进行预测
 
-My_result：效果增强后加载'net_30_mine.pkl'训练出的结果
+My_result.PNG：效果增强后加载'net_50_mine.pkl'训练出的结果
 
-Original_result：效果增强之前加载'net_30_original.pkl'训练出的结果
+Original_result.PNG：效果增强之前加载'net_30_original.pkl'训练出的结果
+
+net_30_origial.pkl：老师提供的网络参数
+
+net_50_mine.pkl：数据增强后训练50轮保存的网络参数
 
 四、注意事项
 
@@ -42,4 +46,4 @@ Original_result：效果增强之前加载'net_30_original.pkl'训练出的结�
 
 2、detection文件夹需要和python文件在同一个目录下。
 
-3、老师的模型保存在net_30_teacher.pkl，我训练出的模型保存在net_30_mine.pkl，可以在Test.py中修改加载的模型。
+3、老师的模型保存在net_30_original.pkl，数据增强后训练出的模型保存在net_50_mine.pkl，可以在Test.py中修改加载的模型。
