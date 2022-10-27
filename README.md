@@ -36,9 +36,9 @@ My_result.PNG：效果增强后加载'net_50_mine.pkl'训练出的结果
 
 Original_result.PNG：效果增强之前加载'net_30_original.pkl'训练出的结果
 
-net_30_origial.pkl：老师提供的网络参数
+net_30_origial.pkl：老师提供的权重文件
 
-net_50_mine.pkl：数据增强后训练50轮保存的网络参数
+net_50_mine.pkl：数据增强后训练50轮保存的权重文件
 
 四、注意事项
 
